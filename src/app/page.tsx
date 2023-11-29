@@ -4,9 +4,28 @@ import FormProvince from "@/components/formProvince/formProvince";
 import FormUserInfo from "@/components/formUserInfo/formUserInfo";
 import { NextSeo } from "next-seo";
 
+// .image-container {
+//   width: 100%;
+
+//   > div {
+//     position: unset !important;
+//   }
+
+//   .image {
+//     object-fit: contain;
+//     width: 100% !important;
+//     position: relative !important;
+//     height: unset !important;
+//   }
+// }
+
 export default function Home() {
   return (
     <>
+      {/* <div className="image-container">
+  <Image src={path} layout="fill" className="image" />
+</div> */}
+
       <NextSeo
         title="CDC Fishing | Trang Web Mua Bán Dụng Cụ Câu Cá"
         description="Tận hưởng những phút giây giải trí và thư giãn với CDC Fishing. Liên hệ với chúng tôi tại ffgcuong12@gmail.com hoặc sdt:0978531164."
