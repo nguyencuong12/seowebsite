@@ -1,31 +1,13 @@
 "use client";
 
+import { CategoryComponent, ContainerComponent } from "@/components/components";
 import FormProvince from "@/components/formProvince/formProvince";
 import FormUserInfo from "@/components/formUserInfo/formUserInfo";
 import { NextSeo } from "next-seo";
 
-// .image-container {
-//   width: 100%;
-
-//   > div {
-//     position: unset !important;
-//   }
-
-//   .image {
-//     object-fit: contain;
-//     width: 100% !important;
-//     position: relative !important;
-//     height: unset !important;
-//   }
-// }
-
 export default function Home() {
   return (
     <>
-      {/* <div className="image-container">
-  <Image src={path} layout="fill" className="image" />
-</div> */}
-
       <NextSeo
         title="CDC Fishing | Trang Web Mua Bán Dụng Cụ Câu Cá"
         description="Tận hưởng những phút giây giải trí và thư giãn với CDC Fishing. Liên hệ với chúng tôi tại ffgcuong12@gmail.com hoặc sdt:0978531164."
@@ -46,9 +28,16 @@ export default function Home() {
           site_name: "CDC Fishing",
         }}
       />
-      <h1>Welcome to CDC Fishing</h1>
-      <p>Explore the best fishing experience with CDC Fishing. Contact us at ffgcuong12@gmail.com or 0978531164.</p>
-      {/* Your content goes here */}
+      <div className="max-w-[300px]">
+        <CategoryComponent></CategoryComponent>
+      </div>
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+        <div className="bg-gray-200 p-4">Item 1</div>
+        <div className="bg-gray-300 p-4">Item 2</div>
+        <div className="bg-gray-400 p-4">Item 3</div>
+
+      </div> */}
     </>
   );
 }
